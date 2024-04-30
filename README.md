@@ -38,6 +38,7 @@ To run the Agile Task App locally, follow these steps:
 - Personal information section, including name, d.o.b, adderss, email, phone. This information is kept to identify the user and enabling a way to communicate with them either through email or phone.
 - Bank and tax information, this section includes tax number, bank account number, bank account number, and salary. These are needed for tax reporting purposes and salary payments to the bank account. I think in this case the salary would be a field that would be inputted by the company rather than the employee, so should be excluded or filled in and disabled, however, it is needed in this case for the tax calculation function part.
 - Each input has an 'id', and a corresponding label with a 'for' attribute enabling screen readers to announce the purpose of each input. Grouping related fields with fieldsets and legends aiding the users understanding of the sections. The entire form can be navigated by tabbing improving accessiblity for those that rely on keyboard input.
+- Assume tax rate follows as on PDF, and super is 11%.
 
 
 
