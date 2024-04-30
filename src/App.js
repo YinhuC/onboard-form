@@ -14,8 +14,6 @@ function App() {
     alert(`Annual Tax: $${tax} \nAnnual Superannuation: $${superA}`);
   };
 
-  console.log(salary);
-
   return (
     <Container className="my-5">
       <h1 className="mb-5">Onboarding Form</h1>
@@ -50,11 +48,11 @@ function App() {
           <Input id="taxNumber" />
         </FormGroup>
         <FormGroup>
-          <Label for="accountName">Account Name:</Label>
+          <Label for="accountName">Bank Account Name:</Label>
           <Input id="accountName" />
         </FormGroup>
         <FormGroup>
-          <Label for="accountNumber">Account Number:</Label>
+          <Label for="accountNumber">Bankn Account Number:</Label>
           <Input id="accountNumber" />
         </FormGroup>
         <FormGroup>
