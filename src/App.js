@@ -17,55 +17,58 @@ function App() {
   return (
     <Container className="my-5">
       <h1 className="mb-5">Onboarding Form</h1>
-      <h2 className="mb-3 mt-5">Personal Details</h2>
       <Form>
-        <FormGroup>
-          <Label for="name">Full Name:</Label>
-          <Input id="name" />
-        </FormGroup>
-        <FormGroup>
-          <Label for="dob">Date of Birth:</Label>
-          <Input id="dob" type="date" />
-        </FormGroup>
-        <FormGroup>
-          <Label for="address">Address:</Label>
-          <Input id="address" />
-        </FormGroup>
-        <FormGroup>
-          <Label for="dob">Email:</Label>
-          <Input id="dob" type="email" />
-        </FormGroup>
-        <FormGroup>
-          <Label for="dob">Phone Number:</Label>
-          <Input id="dob" />
-        </FormGroup>
-      </Form>
+        <fieldset>
+          <legend>Personal Details</legend>
+          <FormGroup>
+            <Label for="name">Full Name:</Label>
+            <Input id="name" />
+          </FormGroup>
+          <FormGroup>
+            <Label for="dob">Date of Birth:</Label>
+            <Input id="dob" type="date" />
+          </FormGroup>
+          <FormGroup>
+            <Label for="address">Address:</Label>
+            <Input id="address" />
+          </FormGroup>
+          <FormGroup>
+            <Label for="email">Email:</Label>
+            <Input id="email" type="email" />
+          </FormGroup>
+          <FormGroup>
+            <Label for="phone">Phone Number:</Label>
+            <Input id="phone" type="tel" />
+          </FormGroup>
+        </fieldset>
 
-      <h2 className="mb-3 mt-5">Bank Details</h2>
-      <Form>
-        <FormGroup>
-          <Label for="taxNumber">Tax Number:</Label>
-          <Input id="taxNumber" />
-        </FormGroup>
-        <FormGroup>
-          <Label for="accountName">Bank Account Name:</Label>
-          <Input id="accountName" />
-        </FormGroup>
-        <FormGroup>
-          <Label for="accountNumber">Bankn Account Number:</Label>
-          <Input id="accountNumber" />
-        </FormGroup>
-        <FormGroup>
-          <Label for="salary">Salary:</Label>
-          <Input
-            id="salary"
-            value={salary}
-            onChange={(e) => setSalary(e.target.value)}
-          />
-        </FormGroup>
-        <Button onClick={alertTax} color="primary">
-          Submit
-        </Button>
+        <fieldset>
+          <legend className="mt-3">Bank Details</legend>
+          <FormGroup>
+            <Label for="taxNumber">Tax Number:</Label>
+            <Input id="taxNumber" />
+          </FormGroup>
+          <FormGroup>
+            <Label for="accountName">Bank Account Name:</Label>
+            <Input id="accountName" />
+          </FormGroup>
+          <FormGroup>
+            <Label for="accountNumber">Bank Account Number:</Label>
+            <Input id="accountNumber" />
+          </FormGroup>
+          <FormGroup>
+            <Label for="salary">Salary:</Label>
+            <Input
+              id="salary"
+              value={salary}
+              onChange={(e) => setSalary(e.target.value)}
+              type="number"
+            />
+          </FormGroup>
+          <Button onClick={alertTax} color="primary">
+            Submit
+          </Button>
+        </fieldset>
       </Form>
     </Container>
   );
